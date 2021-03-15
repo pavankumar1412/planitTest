@@ -4,12 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import com.planItTesting.pages.ContactPage;
-import com.planItTesting.pages.HomePage;
 
 /**
- * The PlanIt class contains methods to perform common operations on JupiterToys.
+ * The PlanIt class contains methods, variables to perform common operations on planit website.
  * @author Ram Pavan Kumar
- * @since 14-Mar 2021
+ * @since 15-Mar 2021
  * @version 1.0
  */
 
@@ -22,7 +21,6 @@ public class PlanItLibrary extends CommonLibrary{
 	
 	
 	public static void LaunchContactPage() throws Exception {
-		//CommonLibrary.initiateDriverInstance("chrome");
 		CommonLibrary.driver.get(appURL);
 		CommonLibrary.logReport(true,"HomeScreen launched", "HomeScreen");
 		driver.findElement(By.xpath(contactHeaderButton)).click();
@@ -31,7 +29,6 @@ public class PlanItLibrary extends CommonLibrary{
 	}
 	
 	public static void LaunchShopPage() throws Exception {
-		//CommonLibrary.initiateDriverInstance("chrome");
 		CommonLibrary.driver.get(appURL);
 		CommonLibrary.logReport(true,"HomeScreen launched", "HomeScreen");
 		driver.findElement(By.xpath(shopHeaderButton)).click();

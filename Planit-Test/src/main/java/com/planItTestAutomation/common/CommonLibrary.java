@@ -28,6 +28,13 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.steadystate.css.parser.ParseException;
 
+
+/**
+ * The CommonLibrary class contains methods to perform common operations on JupiterToys.
+ * @author Ram Pavan Kumar
+ * @since 14-Mar 2021
+ * @version 1.0
+ */
 public class CommonLibrary {
 	
 	public static ExtentReports csvExtent;
